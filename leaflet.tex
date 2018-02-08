@@ -16,18 +16,43 @@
 \usepackage[subpreambles=true]{standalone}
 \usepackage{enumerate}
 
+
+%% email %% 
+\usepackage{color, hyperref}
+\catcode`\_=11\relax
+\newcommand\email[1]{\_email #1\q_nil}
+\def\_email#1@#2\q_nil{%
+  \href{mailto:#1@#2}{{\emailfont #1\emailampersat #2}}
+}
+\newcommand\emailfont{\sffamily}
+\newcommand\emailampersat{{\small@}}
+\catcode`\_=8\relax 
+%% end email %%   
+
+
+
+
 \title{Ph.D. at the CSE Department}
-
-
 \begin{document}
 \maketitle
-\section*{Before Anything}
-Get access to the internet (eduroam).
+\section*{Before Anything: }
+How to get access to the internet:
+\paragraph{(Recommended) WiFi access:}
+  Your CID and login should get you connected with \emph{eduroam} / NOMAD.
+  To get your other devices connected: 
 
-Procedure to get CID and to log in eduroam / NOMAD
-If you have internet access already, this links contains information on how to setup your euduroam account: 
-\\
-\url{https://it.portal.chalmers.se/itportal/CDAWindows/Eduroamw10}
+  \begin{enumerate}
+  \item   Windows: \url{https://it.portal.chalmers.se/itportal/CDAWindows/Eduroamw10}
+  \item  iOS: \url{https://it.portal.chalmers.se/itportal/MobilSurfPlattaApple/EduroamConnect}
+  \item  Android: \url{https://it.portal.chalmers.se/itportal/MobilSurfPlattaAndroid/MobilSurfPlattaAndroid}
+  \end{enumerate}
+
+  \textbf{It is important that you follow the instructions \emph{for employees} instead of for students, your CID belongs to employee database and the instructions for students would not work for you.}
+
+\paragraph{LAN line access}
+The LAN ports (at least one of them) should be able to provide connection out of the box. 
+If you experience difficulties with LAN ports, take a look at \url{https://www.chalmers.se/insidan/SV/arbetsredskap/it/chalmers-servicedesk/bestall-dhcp} for registering your computer LAN connections. 
+
 \section*{Useful Information}
 \textbf{Fika} (say what it is) usually you'll find people upstairs at around 3pm in the lunchroom
 

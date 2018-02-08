@@ -1,0 +1,128 @@
+%% %% Based on ACM LaTeX template
+%% %% with absolutely NO guarentee 
+%% %% Jeff C. Feb. 2018
+\documentclass[acmtog]{acmart}
+
+\usepackage{booktabs} % For formal tables
+
+% TOG prefers author-name bib system with square brackets
+\citestyle{acmauthoryear}
+\setcitestyle{square}
+
+\fancyfoot{}
+\usepackage[ruled]{algorithm2e} % For algorithms
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+\settopmatter{printacmref=false}
+% removes footnote with conference information in first column
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\pagestyle{plain}
+\setcopyright{none}
+
+%% other fancy packages: 
+\usepackage{qrcode}
+\usepackage{fontawesome}
+
+% Paper history
+\received[final version]{February 2018}
+
+% Document starts
+\begin{document}
+
+% Title portion
+\title{Welcome to Computer Science and Engineering}
+
+\author{Elena Pagnin \& Jeff Chen}
+\affiliation{%
+  \institution{Chalmers University of Technology}
+  \city{G{\"o}teborg}
+  \country{Sweden}}
+\email{cse.phdcouncil@chalmers.se}
+
+
+\begin{abstract}
+  %% [Jeff] Need your help filling some greetings here!
+  Welcome onboard! We are the Ph.D. council at our department.
+\end{abstract}
+
+  %% [Jeff] for the keywords I was thinking about some catchy phrases and maybe some eye candys 
+\keywords{\\ \textbf{WiFi Access}, Access Card,  Administrative Contacts}
+
+\maketitle
+\thispagestyle{empty}
+
+\section{Preflight Checklist}
+Please contact your nearest admin help if you have not receive \textbf{ANY} item from the following list:
+\begin{itemize}
+\item Your CID scratch card
+\item Your formal contract      % [Jeff] not sure about this on day one?
+%% [Jeff] more things in the list? 
+\end{itemize}
+
+
+\section{Most Important Thing\dots}
+\label{wifi}
+How to get access to the internet:
+\paragraph{(Recommended) WiFi access:}
+
+  Your CID and login should get you connected with \emph{eduroam} / NOMAD.
+  To get your other devices connected, including Windows~\cite{windowsWifi}, iOS~\cite{iosWifi}, Android~\cite{androidWifi} 
+
+  \textbf{It is important that you follow the instructions \emph{for employees} instead of for students, your CID belongs to employee database and the instructions for students would not work for you.}
+
+
+\paragraph{LAN line access:}
+
+The LAN ports (at least one of them) should be able to provide connection out of the box. 
+If you experience difficulties with LAN ports, take a look at \url{https://www.chalmers.se/insidan/SV/arbetsredskap/it/chalmers-servicedesk/bestall-dhcp} for registering your computer LAN connections. 
+
+
+\section{Useful Information}
+\paragraph{Fika}
+\begin{equation}
+E_{nergy} = M_{ilk} * (C_{offee})^2
+\end{equation}
+
+
+\paragraph{FAQ}
+
+\paragraph{PhD Council website}
+with important information you need to know 
+
+\paragraph{Tour of the house}
+
+\paragraph{Department and Division}
+meetings happen monthly
+
+\paragraph{Two Campuses}
+
+\section{Important Contacts (in case of need)}
+\paragraph{Administrative Officers}
+\\
+\paragraph{IT people}
+\begin{itemize}
+\item Michael Morin (Room 4126) \url{michael.morin@ituniv.se}
+\end{itemize}
+\paragraph{PhD Council}
+%% give name of a few members (email + office / name)
+
+
+\begin{figure}
+  \begin{center}
+    \qrcode[width=1in]{FAQ_Website}
+    \caption{Please visit our page for more FAQ}
+    \end{center}
+\end{figure}
+
+%% %\begin{acknowledgements}
+%% %If you'd like to thank anyone, place your comments here
+%% %and remove the percent signs.
+%% %\end{acknowledgements}
+
+\bibliographystyle{abbrv}
+\bibliography{leaflet}
+\end{document}
